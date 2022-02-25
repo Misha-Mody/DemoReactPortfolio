@@ -41,5 +41,6 @@ The ProjectCard component can be reused as each project can have a project card.
 
 ## COMPONENT LIFECYCLE METHODS
 
-The componentDidMount method is used
+The componentDidMount method is used in the Project.js file to fetch the data. In practice, componentDidMount is the best place to put calls to fetch data as using didMount makes it clear that data won’t be loaded until after the initial render. This reminds you to set up initial state properly, so you don’t end up with undefined state that causes errors.
+This data is then stores as a state.
 
