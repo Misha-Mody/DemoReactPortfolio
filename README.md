@@ -4,8 +4,8 @@ A demo portfolio website that showcases one's projects using important propertie
 
 # TO RUN THE PROJECT
 
-1. Clone this repository
-2. Move to folder
+1. Clone this repository `git clone https://github.com/Misha-Mody/DemoReactPortfolio.git`
+2. Move to folder `cd DemoReactPortfolio`
 3. Install node modules by `npm install`
 4. Run the projects with `npm start`
 
