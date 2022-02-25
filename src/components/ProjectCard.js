@@ -1,19 +1,29 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-export default class ProjectCard extends Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
-		return (
-			<div className="card">
-				<img src={this.props.url} className="card-img-top" alt="..." />
-				<div className="card-body">
-					<p className="card-title"> {this.props.title}</p>
-					<p className="card-text">{this.props.description}</p>
-				</div>
-			</div>
-		);
-	}
+class ProjectCard extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <div className="card bg-dark">
+          <img src={this.props.url} className="card-img" alt="..." />
+          <div className="card-img-overlay">
+            <h5 className="card-title">{this.props.title}</h5>
+            <p className="card-text">{this.props.description}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
+
+ProjectCard.propTypes = {
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
+};
+
+export default ProjectCard;
